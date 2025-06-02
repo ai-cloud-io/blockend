@@ -2,7 +2,7 @@
 
 [![Solidity](https://img.shields.io/badge/Solidity-0.8.30-blue?logo=ethereum)](https://docs.soliditylang.org)
 [![Hardhat](https://img.shields.io/badge/Hardhat-dev-yellow)](https://hardhat.org)
-[![Chainlink](https://img.shields.io/badge/Chainlink-Data-Feeds-blue)](https://chain.link/data-feeds)
+[![Chainlink](https://img.shields.io/badge/Chainlink-Data-Feeds)](https://chain.link/data-feeds)
 [![Chainlink](https://img.shields.io/badge/Chainlink-Functions-blue)](https://chain.link/functions)
 [![Chainlink](https://img.shields.io/badge/Chainlink-Automation-blue)](https://chain.link/automation)
 [![Docker](https://img.shields.io/badge/Docker-Container-blue?logo=docker)](https://docker.com)
