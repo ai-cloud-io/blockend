@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.28;
 
-contract McpProvider {
+contract McpRequester {
     event RequestFailed(string indexed uri);
     event ProviderRequested(string indexed uri);
     event McpRequestEnded(string indexed uri);
