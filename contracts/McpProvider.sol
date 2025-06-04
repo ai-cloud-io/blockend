@@ -1,6 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.28;
 
+import '@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol';
+
+event ProviderRegistered(string indexed uri);
+event ProviderDeregistered(string indexed uri);
+error RegistrationFailed(bool placeholder);
+
 contract McpProvider {
     struct Provider {
         address providerAddress;
@@ -9,16 +15,12 @@ contract McpProvider {
 
     mapping(string => Provider) private providers;
 
-    event RegistrationFailed(string indexed uri);
-    event ProviderRegistered(string indexed uri);
-    event ProviderDeregistered(string indexed uri);
-
     function registerProvider(bool placeholder) public {
         if (placeholder == true) {
             // Real logic: check if exists, then add to mapping
             emit ProviderRegistered('Provider registered successfully');
         } else {
-            emit RegistrationFailed('Placeholder registration failed');
+            revert RegistrationFailed(placeholder);
         }
     }
 
