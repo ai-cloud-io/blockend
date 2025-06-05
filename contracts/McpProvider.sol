@@ -34,7 +34,7 @@ contract McpProvider {
             // Real logic: remove from mapping
             emit ProviderRegistered('Provider registered successfully');
         } else {
-            emit RegistrationFailed('Placeholder registration failed');
+            revert RegistrationFailed(placeholder);
         }
     }
 }
