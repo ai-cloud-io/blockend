@@ -1,11 +1,15 @@
 {
   "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
     "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.14",
+    "ethers": "^6.14.3",
     "hardhat": "^2.24.2",
     "prettier": "^3.5.3",
     "prettier-plugin-solidity": "^2.0.0"
   },
   "dependencies": {
-    "@chainlink/contracts": "^1.4.0"
+    "@chainlink/contracts": "^1.4.0",
+    "dotenv": "^16.5.0"
   }
 }
